@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTrack</title>
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.95/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/satellite.js/dist/satellite.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>SkyTrack</h1>
+        <div class="subtitle">Real-Time Space Monitoring & Orbital Visualization</div>
+    </div>
+
+    <div id="cesiumContainer"></div>
+    
+    <div class="ui-container">
+        <input type="text" class="search-box glass" placeholder="Search satellites by name or NORAD ID..." id="searchInput">
+        <div class="loading-panel glass" id="loadingPanel">
+            <div class="loading" id="loadingText">Loading all satellites data...</div>
+        </div>
+        <div class="info-panel glass" id="infoPanel">
+            <div class="loading">Click any satellite to view real-time data</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 SkyTrack by Pallavi Thakur | <a href="https://github.com/cloudxplorer" target="_blank">GitHub Repository</a> | 
+           Data sourced from Celestrak & NASA
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
