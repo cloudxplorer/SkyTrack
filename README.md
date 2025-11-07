@@ -68,7 +68,7 @@ This project is designed for both **space enthusiasts** and **educational demons
 ### Installation Steps
 
 1. **Clone or Download the Project**
-   # If using git
+### If using git
 - git clone https://github.com/cloudxplorer/SkyTrack
 - cd SkyTrack
 - python -m http.server 4444
